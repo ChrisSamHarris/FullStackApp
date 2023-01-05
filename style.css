@@ -122,6 +122,10 @@ body {
   align-items: center;
   gap: 24px;
   border-radius: 16px;
+  /* Use the follwoing for the new style: */
+  /* text-align: center; */
+  /* flex-direction: column; */
+  /* Need work on padding, margin and Gaps */
 }
 
 @media (max-width: 1200px) {
