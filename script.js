@@ -50,7 +50,7 @@ const initialFacts = [
 // ########### SupaBase Load ###########
 loadFacts();
 
-// Config.js
+// Config.js file function !!!!!!!!!!!!!!!!!!!!!!!!
 
 // DOM - Document Object Model
 // ########## DOM Manipulation ##########
