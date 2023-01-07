@@ -13,6 +13,8 @@ const CATEGORIES = [
   { name: "news", color: "#8b5cf6" },
 ];
 
+console.log(CATEGORIES.find((cat) => cat.name === "society").color);
+
 const initialFacts = [
   {
     id: 1,
@@ -49,8 +51,7 @@ const initialFacts = [
 
 // ########### SupaBase Load ###########
 loadFacts();
-
-// Config.js file function !!!!!!!!!!!!!!!!!!!!!!!!
+//import loadFacts from "./config.mjs";
 
 // DOM - Document Object Model
 // ########## DOM Manipulation ##########
@@ -63,6 +64,7 @@ const factsList = document.querySelector(".facts-list");
 
 //Create DOM Elements: Render facts in lists
 factsList.innerHTML = "";
+
 //createFactsList(initialFacts);
 //createFactsList([{ text: "Chris" }, { text: "Olivia" }]);
 
@@ -78,11 +80,13 @@ function createFactsList(dataArray) {
       target="_blank"
       >(Source)</a>
      </p>
-    <span class="tag" style="background-color: #3b82f6"
+    <span class="tag" style="background-color: ${
+      CATEGORIES.find((cat) => cat.name === fact.category).color
+    }"
       >${fact.category}</span>
     </li>`
   );
-  console.log(htmlArr);
+  //console.log(htmlArr);
   const html = htmlArr.join("");
   factsList.insertAdjacentHTML("afterbegin", html);
 }
@@ -101,6 +105,9 @@ btn.addEventListener("click", function () {
 });
 
 console.log([6, 64, 6, -23, 11].filter((el) => el > 10));
+// filter returns an array of correct values
+console.log([6, 64, 6, -23, 11].find((el) => el > 10));
+// find returns a single value, the first on which the condition is true
 
 // function calcFactAge(year) {
 //   const currentYear = new Date().getFullYear();
