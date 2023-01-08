@@ -221,6 +221,7 @@ ul {
 .btn-all-categories {
   margin-bottom: 32px;
   width: 100%;
+  color: inherit;
 }
 
 .btn-category {
