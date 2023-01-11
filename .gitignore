@@ -1,4 +1,7 @@
 Ref/
 
-config.js
-config.mjs
+v1/config.mjs
+
+v1/config.js
+
+today-i-learned/src/supabase.js
