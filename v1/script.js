@@ -49,8 +49,10 @@ const initialFacts = [
   },
 ];
 
-// ########### SupaBase Load ###########
+// ####################### SupaBase Load #######################
 loadFacts();
+
+// async function loadFacts() {}
 //import loadFacts from "./config.mjs";
 
 // DOM - Document Object Model
