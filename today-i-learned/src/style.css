@@ -28,12 +28,19 @@ body {
   margin-top: 24px;
 }
 
+.disputed {
+  color: #ef4444;
+  font-weight: 600;
+  margin-right: 10px;
+}
+
 /* LAYOUTS */
 
 #root {
   max-width: 1500px;
   /* keeps the page centered with auto margins */
   margin: 0 auto;
+  height: 80vh;
 }
 
 .header {
@@ -76,6 +83,18 @@ body {
   }
 }
 
+@media (max-width: 900px) {
+  .main {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+}
+
+section {
+  overflow: scroll;
+  padding-bottom: 40px;
+}
+
 .fact-form input,
 .fact-form select {
   background-color: #78716c;
@@ -105,6 +124,8 @@ body {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 40px;
+
+  height: calc(100vh - 48px - 68px - 40px);
 }
 
 @media (max-width: 650px) {
