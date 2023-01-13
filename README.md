@@ -9,6 +9,8 @@ Original vanilla take on the app can be found within [/v1](https://github.com/Ch
 
 - Supabase backend initialisation
 - @supabase/supabase-js
+- Supabase configuration containing supabaseURL, supabaseKey(api) & create client function
+- Supabase table with required configuration and K:V pairs
 
 ## Purpose
 
