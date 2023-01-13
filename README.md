@@ -2,7 +2,7 @@
 
 ## Overview
 
-Production application is react based and can be found in folder [/today-i-learned](https://github.com/ChrisSamHarris/FullStackApp/tree/main/today-i-learned).
+Production application is react based and can be found in folder [/today-i-learned](https://github.com/ChrisSamHarris/FullStackApp/tree/main/today-i-learned).</br>
 Original vanilla take on the app can be found within [/v1](https://github.com/ChrisSamHarris/FullStackApp/tree/main/v1).
 
 ## Requirements
